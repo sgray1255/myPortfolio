@@ -40,3 +40,45 @@
   font-weight: normal;
   color: #071F62;
 }
+
+.hero {
+  width: 300px;
+  margin-left: 100px;
+}
+.hero__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 100px;
+  color: white;
+  margin-bottom: 0px;
+}
+.hero__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.25em;
+  color: #071F62;
+  opacity: 0.5;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+.gallery__web {
+  height: 200px;
+  width: 200px;
+  background-color: transparent;
+  color: white;
+  margin-left: 25px;
+}
+.gallery__key {
+  height: 200px;
+  width: 250px;
+  background-color: transparent;
+  color: white;
+}
