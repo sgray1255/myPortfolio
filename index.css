@@ -169,6 +169,24 @@
   height: 300px;
 }
 
+.my-work {
+  height: 700px;
+}
+.my-work__header {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 200px;
+}
+.my-work__header__text {
+  grid-area: "header";
+  font-family: "Poppins", sans-serif;
+  font-size: 100px;
+  line-height: 150px;
+  display: flex;
+  justify-content: flex-end;
+  color: #071F62;
+}
+
 .background {
   background-image: url(./images/cool-background.png);
   background-color: lightgray;
