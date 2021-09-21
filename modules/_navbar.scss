@@ -3,13 +3,14 @@
 .header {
   display: flex;
   height: 75px;
-  width: auto;
+  width: 100%;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
   overflow: hidden;
-  margin-left: 50px;
+
+  background-color: #071F62;
   
 }
 
@@ -27,7 +28,8 @@
     font-weight: bold;
     font-size: 25px;
     line-height: 45px;
-    color: #071F62;
+    color: white;
+    background-color: #071F62;
   }
 
   &__bar {
@@ -36,7 +38,8 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
-    color: #071F62;
+    color: white;
+    background-color: #071F62;
   }
 
   &__a {
@@ -45,6 +48,7 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
-    color: #071F62;
+    color: white;
+    background-color: #071F62;
   }
 }
