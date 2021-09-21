@@ -2,3 +2,26 @@
 @use "./modules/hero";
 @use "./modules/herogallery";
 @use "./modules/aboutme";
+@use "./modules/chip";
+@use "./modules/avatar";
+
+
+.background {
+  background-image: url(./images/cool-background.png);
+  background-color: lightgray;
+  width: auto;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.body{
+  display: flex;
+  margin-top: 75px;
+  justify-content: space-around;
+
+}
+
+hr {
+  border: 1px solid #071F62;
+  margin: 10px 50px;
+}
