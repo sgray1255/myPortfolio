@@ -1,0 +1,145 @@
+@use "../navbar";
+@use "../hero";
+@use "../herogallery";
+@use "../aboutme";
+@use "../chip";
+@use "../avatar";
+@use "../mywork";
+@use "../contact";
+
+@media only screen and (min-width: 476px) and (max-width: 765px) {
+
+  .background {
+    width: 100vw;
+  }
+
+  .nav {
+ 
+    &__logo {
+      font-size: 12.5px;
+      line-height: 20px;
+    }
+
+    &__bar {
+      margin-left: 5px;
+    }
+    
+    &__a {
+      font-size: 10px;
+    }
+  }
+  
+  .chip {
+    margin-right: 20px;
+
+    &__content {
+      font-size: 10px;
+    }
+  }
+
+  .hero {
+    margin-left: 5%;
+
+    &__title {
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+
+  .gallery {
+    gap: 5px;
+
+    &__web {
+      height: 150px;
+      width: 150px;
+      margin-left: 5px;
+    }
+
+    &__key {
+      height: 125px;
+      width: 150px;
+
+    }
+  }
+
+  .avatar {
+    &__icon {
+      height: 200px;
+      margin-top: 15px;
+    }
+
+    &__tech-stack {
+      height:200px;
+    }
+  }
+
+  .about {
+    margin-left: 25px;
+    margin-top: 25px;
+    height: 750px;
+  
+
+    &__image {
+      grid-area: image;
+      height: auto;
+      width: 250px;
+    }
+
+    &__image2 {
+      grid-area: eye;
+      height: auto;
+      width: 150px;
+    }
+
+    &__header {
+      font-size: 50px;
+    }
+
+    &__content {
+      width: 250px;
+      color: white;
+      height: 150px;
+      font-size: 10px;
+    }
+
+    &__content__chip {
+      width: 150px;
+      font-size: 10px;
+      padding: 5px;
+    }
+
+    &__content__chip__icon {
+      height: 15px;
+    }
+}
+
+.my-work {
+  height: 700px;
+  justify-content: center;
+
+  &__header {
+    justify-content: center;
+
+  }
+
+  &__header__text {
+    font-size: 50px;
+    line-height: 150px;
+  }
+}
+
+.contact {
+
+  &__header {
+    font-size: 25px;
+    width: 500px;
+    line-height: 25px;
+    margin-left: 0px;
+  }
+
+  &__icons > img {
+   height: auto;
+   width: 50px;
+  }
+}
+}

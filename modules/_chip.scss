@@ -9,9 +9,14 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    margin-left: 200px;
+    margin-left: 100px;
     color: #071F62;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
   }
+}
+
+.chip > button:hover {
+  box-shadow: lightblue 0.5;
+  cursor: pointer;
 }

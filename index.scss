@@ -6,7 +6,10 @@
 @use "./modules/avatar";
 @use "./modules/mywork";
 @use "./modules/contact";
-
+@use "./modules/mediaq/phone-media";
+@use "./modules/mediaq/tablet-media";
+@use "./modules/mediaq/large-tab-media";
+@use "./modules/mediaq/desktop-media";
 
 .background {
   background-image: url(./images/cool-background.png);
@@ -14,6 +17,7 @@
   width: auto;
   height: auto;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .body{

@@ -2,7 +2,7 @@
   display: flex;
   height: 75px;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: fixed;
   top: 0;
@@ -24,9 +24,11 @@
   line-height: 45px;
   color: white;
   background-color: #071F62;
+  margin: 5%;
 }
 .nav__bar {
-  margin-left: 50px;
+  margin: 5%;
+  display: flex;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -35,13 +37,17 @@
   background-color: #071F62;
 }
 .nav__a {
-  margin: 10px;
+  margin: 5%;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   color: white;
   background-color: #071F62;
+}
+.nav__a:hover {
+  background-color: white;
+  color: #071F62;
 }
 
 .hero {
@@ -56,6 +62,7 @@
   line-height: 100px;
   color: white;
   margin-bottom: 0px;
+  display: flex;
 }
 .hero__subtitle {
   font-family: "Poppins", sans-serif;
@@ -64,6 +71,7 @@
   letter-spacing: 0.25em;
   color: #071F62;
   opacity: 0.5;
+  display: flex;
 }
 
 .gallery {
@@ -154,10 +162,15 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  margin-left: 200px;
+  margin-left: 100px;
   color: #071F62;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+}
+
+.chip > button:hover {
+  box-shadow: lightblue 0.5;
+  cursor: pointer;
 }
 
 .avatar {
@@ -168,9 +181,11 @@
 }
 .avatar__icon {
   height: 300px;
+  display: flex;
 }
 .avatar__tech-stack {
   height: 300px;
+  display: flex;
 }
 
 .my-work {
@@ -178,8 +193,7 @@
 }
 .my-work__header {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 200px;
+  justify-content: center;
 }
 .my-work__header__text {
   grid-area: "header";
@@ -207,12 +221,323 @@
   justify-content: space-around;
 }
 
+@media only screen and (max-width: 475px) {
+  .background > img {
+    width: 100vw;
+  }
+
+  .nav__logo {
+    grid-area: logo;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .nav__bar {
+    margin-left: 5px;
+  }
+  .nav__a {
+    font-size: 8px;
+  }
+
+  .hero {
+    margin-left: 5%;
+  }
+  .hero__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .gallery {
+    gap: 3px;
+  }
+  .gallery__web {
+    height: auto;
+    width: 125px;
+    margin-left: 5px;
+  }
+  .gallery__key {
+    height: auto;
+    width: 125px;
+  }
+
+  .avatar__icon {
+    height: 200px;
+    margin-top: 15px;
+  }
+  .avatar__tech-stack {
+    height: 200px;
+  }
+
+  .about {
+    margin-left: 25px;
+    margin-top: 25px;
+    height: 750px;
+  }
+  .about__image {
+    grid-area: image;
+    height: auto;
+    width: 200px;
+  }
+  .about__image2 {
+    grid-area: eye;
+    height: auto;
+    width: 100px;
+  }
+  .about__header {
+    font-size: 50px;
+  }
+  .about__content {
+    width: 250px;
+    color: white;
+    height: 150px;
+    font-size: 10px;
+  }
+  .about__content__chip {
+    width: 150px;
+    font-size: 10px;
+    padding: 5px;
+  }
+  .about__content__chip__icon {
+    height: 15px;
+  }
+
+  .my-work {
+    height: 700px;
+    justify-content: center;
+  }
+  .my-work__header {
+    justify-content: center;
+  }
+  .my-work__header__text {
+    font-size: 50px;
+    line-height: 150px;
+  }
+
+  .contact__header {
+    font-size: 25px;
+    width: 475px;
+    line-height: 25px;
+    margin-left: 0px;
+  }
+  .contact__icons {
+    width: 100%;
+  }
+  .contact__icons > img {
+    height: auto;
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 476px) and (max-width: 765px) {
+  .background {
+    width: 100vw;
+  }
+
+  .nav__logo {
+    font-size: 12.5px;
+    line-height: 20px;
+  }
+  .nav__bar {
+    margin-left: 5px;
+  }
+  .nav__a {
+    font-size: 10px;
+  }
+
+  .chip {
+    margin-right: 20px;
+  }
+  .chip__content {
+    font-size: 10px;
+  }
+
+  .hero {
+    margin-left: 5%;
+  }
+  .hero__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .gallery {
+    gap: 5px;
+  }
+  .gallery__web {
+    height: 150px;
+    width: 150px;
+    margin-left: 5px;
+  }
+  .gallery__key {
+    height: 125px;
+    width: 150px;
+  }
+
+  .avatar__icon {
+    height: 200px;
+    margin-top: 15px;
+  }
+  .avatar__tech-stack {
+    height: 200px;
+  }
+
+  .about {
+    margin-left: 25px;
+    margin-top: 25px;
+    height: 750px;
+  }
+  .about__image {
+    grid-area: image;
+    height: auto;
+    width: 250px;
+  }
+  .about__image2 {
+    grid-area: eye;
+    height: auto;
+    width: 150px;
+  }
+  .about__header {
+    font-size: 50px;
+  }
+  .about__content {
+    width: 250px;
+    color: white;
+    height: 150px;
+    font-size: 10px;
+  }
+  .about__content__chip {
+    width: 150px;
+    font-size: 10px;
+    padding: 5px;
+  }
+  .about__content__chip__icon {
+    height: 15px;
+  }
+
+  .my-work {
+    height: 700px;
+    justify-content: center;
+  }
+  .my-work__header {
+    justify-content: center;
+  }
+  .my-work__header__text {
+    font-size: 50px;
+    line-height: 150px;
+  }
+
+  .contact__header {
+    font-size: 25px;
+    width: 500px;
+    line-height: 25px;
+    margin-left: 0px;
+  }
+  .contact__icons > img {
+    height: auto;
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 766px) and (max-width: 992px) {
+  .background {
+    width: 100vw;
+  }
+
+  .nav__bar {
+    margin-left: 5px;
+  }
+  .nav__a {
+    font-size: 10px;
+  }
+
+  .hero {
+    margin-left: 5%;
+  }
+  .hero__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .gallery {
+    gap: 5px;
+  }
+  .gallery__web {
+    height: 150px;
+    width: 150px;
+    margin-left: 5px;
+  }
+  .gallery__key {
+    height: 125px;
+    width: 150px;
+  }
+
+  .avatar__icon {
+    height: 200px;
+    margin-top: 15px;
+  }
+  .avatar__tech-stack {
+    height: 200px;
+  }
+
+  .about {
+    margin-left: 25px;
+    margin-top: 25px;
+    height: 1000px;
+  }
+  .about__image {
+    grid-area: image;
+    height: auto;
+    width: 300px;
+  }
+  .about__image2 {
+    grid-area: eye;
+    height: auto;
+    width: 200px;
+  }
+  .about__header {
+    font-size: 75px;
+  }
+  .about__content {
+    width: 400px;
+    color: white;
+    height: 300px;
+    font-size: 15px;
+  }
+  .about__content__chip {
+    width: 150px;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .about__content__chip__icon {
+    height: 20px;
+  }
+
+  .my-work {
+    height: 700px;
+    justify-content: center;
+  }
+  .my-work__header {
+    justify-content: center;
+  }
+  .my-work__header__text {
+    font-size: 50px;
+    line-height: 150px;
+  }
+
+  .contact__header {
+    font-size: 40px;
+    width: 500px;
+    line-height: 50px;
+    margin-left: 0px;
+  }
+  .contact__icons > img {
+    height: auto;
+    width: 50px;
+  }
+}
 .background {
   background-image: url(./images/cool-background.png);
   background-color: lightgray;
   width: auto;
   height: auto;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .body {
