@@ -1,0 +1,20 @@
+.my-work {
+  height: 700px;
+
+
+  &__header {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &__header__text {
+    grid-area: 'header';
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    line-height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    color: #071F62;
+  }
+}

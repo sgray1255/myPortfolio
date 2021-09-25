@@ -1,0 +1,16 @@
+.avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+
+  &__icon {
+    height: 300px;
+    display: flex;
+  }
+
+  &__tech-stack {
+    height: 300px;
+    display: flex;
+  }
+}

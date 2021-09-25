@@ -1,0 +1,33 @@
+@use "./modules/navbar";
+@use "./modules/hero";
+@use "./modules/herogallery";
+@use "./modules/aboutme";
+@use "./modules/chip";
+@use "./modules/avatar";
+@use "./modules/mywork";
+@use "./modules/contact";
+@use "./modules/mediaq/phone-media";
+@use "./modules/mediaq/tablet-media";
+@use "./modules/mediaq/large-tab-media";
+@use "./modules/mediaq/desktop-media";
+
+.background {
+  background-image: url(./images/cool-background.png);
+  background-color: lightgray;
+  width: auto;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body{
+  display: flex;
+  margin-top: 75px;
+  justify-content: space-around;
+
+}
+
+hr {
+  border: 1px solid #071F62;
+  margin: 10px 50px;
+}

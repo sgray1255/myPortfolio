@@ -1,0 +1,60 @@
+
+
+.header {
+  display: flex;
+  height: 75px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background-color: #071F62;
+  
+}
+
+
+.nav {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  background-color: transparent;
+
+
+  &__logo {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 45px;
+    color: white;
+    background-color: #071F62;
+    margin: 5%;
+  }
+
+  &__bar {
+    margin: 5%;
+    display: flex;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    background-color: #071F62;
+  }
+
+  &__a {
+    margin: 5%;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    background-color: #071F62;
+  }
+
+  &__a:hover {
+    background-color: white;
+    color: #071F62;
+  }
+}

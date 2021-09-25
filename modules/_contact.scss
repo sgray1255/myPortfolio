@@ -1,0 +1,19 @@
+.contact {
+
+  &__header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: #071F62;
+    width: 600px;
+    line-height: 100px;
+    margin-left: 100px;
+  }
+
+  &__icons {
+    display: flex;
+    background-color: #071F62;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

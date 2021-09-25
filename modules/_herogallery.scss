@@ -1,0 +1,21 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+
+  &__web {
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    color:white;
+    margin-left: 25px;
+  }
+
+  &__key {
+    height: 200px;
+    width: 250px;
+    background-color: transparent;
+    color:white;
+  }
+}

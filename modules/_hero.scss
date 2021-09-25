@@ -1,0 +1,26 @@
+
+.hero {
+  width: 300px;
+  margin-left: 100px;
+ 
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 100px;
+    color: white;
+    margin-bottom: 0px;
+    display: flex;
+  }
+
+  &__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.25em;
+    color: #071F62;
+    opacity: 0.5;
+    display: flex;
+  }
+}
