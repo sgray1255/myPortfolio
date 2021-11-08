@@ -8,6 +8,7 @@
   top: 0;
   overflow: hidden;
   background-color: #071F62;
+  transition: top 0.3s;
 }
 
 .nav {
@@ -39,6 +40,8 @@
 .nav__a {
   margin: 5%;
   text-decoration: none;
+  float: left;
+  display: block;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -99,14 +102,17 @@
   margin-left: 100px;
   margin-top: 50px;
   height: 1000px;
-  grid-column: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-row: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: ". . . . . . . " ". .  header header . . ." ". . image image  . . eye" ". . image image . content content" ". . image image . content content";
+  grid-template-areas: "header header header . . eye . ." ". . . . . . . ." ". image image  . . content content ." ". image image . . content content ." ". image image . . content content .";
 }
 .about__image {
   grid-area: image;
+  margin-bottom: 75%;
 }
 .about__image2 {
+  margin-top: 35%;
+  margin-left: 80%;
   grid-area: eye;
 }
 .about__header {
@@ -114,8 +120,7 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 100px;
-  line-height: 100px;
+  font-size: 90px;
   color: #071F62;
   grid-area: header;
 }
@@ -126,6 +131,8 @@
   flex-direction: column;
   align-items: center;
   width: 500px;
+  margin-top: 25%;
+  margin-left: 10%;
   color: white;
   background-color: #071F62;
   border: 2px solid #071F62;
@@ -142,7 +149,7 @@
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  width: 150px;
+  width: 300px;
   padding: 5px;
 }
 .about__content__chip__icon {
@@ -169,7 +176,6 @@
 }
 
 .chip > button:hover {
-  box-shadow: lightblue 0.5;
   cursor: pointer;
 }
 
@@ -188,23 +194,91 @@
   display: flex;
 }
 
-.my-work {
-  height: 700px;
+.my-work #card1 {
+  width: 12rem;
 }
-.my-work__header {
+.my-work #card1 > img {
+  width: 8rem;
+  align-content: center;
+}
+.my-work #card2 {
+  width: 30rem;
+}
+.my-work #card2 > img {
+  padding-top: 15px;
+  width: 28rem;
+  height: 15rem;
+}
+.my-work #card3 {
+  width: 22rem;
+}
+.my-work #card3 > img {
+  width: 20rem;
+  height: 14rem;
+}
+.my-work #card4 {
+  margin-top: 5%;
+  width: 100rem;
+}
+.my-work #card4 > img {
+  width: 50rem;
+  height: 25rem;
+}
+.my-work__cards {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.my-work__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  background-color: #071F62;
+  color: white;
+  font-family: "Poppins", "sans-serif";
+  border-radius: 7px;
+}
+.my-work__card__header {
+  border-bottom: 1px solid white;
+}
+.my-work__card > button {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+.my-work__card > button > a {
+  color: #071F62;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.my-work__card > button:hover {
+  color: white;
+  background-color: #071F62;
+}
+.my-work__card > button > a:hover {
+  color: white;
+  text-decoration: none;
+}
+.my-work__card__img {
+  height: 12rem;
+  width: auto;
+  padding: 5px;
 }
 .my-work__header__text {
   grid-area: "header";
   font-family: "Poppins", sans-serif;
-  font-size: 100px;
+  font-size: 120px;
   line-height: 150px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: #071F62;
 }
 
+.contact {
+  margin-top: 20%;
+}
 .contact__header {
   font-family: "Poppins", sans-serif;
   font-size: 50px;
@@ -219,6 +293,12 @@
   padding: 25px;
   align-items: center;
   justify-content: space-around;
+}
+.contact__info {
+  color: #071F62;
+  font-family: "Poppins", "sans-serif";
+  display: flex;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 475px) {
@@ -257,6 +337,7 @@
   .gallery__key {
     height: auto;
     width: 125px;
+    margin-left: 10px;
   }
 
   .avatar__icon {
@@ -270,7 +351,7 @@
   .about {
     margin-left: 25px;
     margin-top: 25px;
-    height: 750px;
+    height: 600px;
   }
   .about__image {
     grid-area: image;
@@ -301,8 +382,22 @@
   }
 
   .my-work {
-    height: 700px;
     justify-content: center;
+  }
+  .my-work__cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .my-work__card {
+    margin: 5%;
+  }
+  .my-work #card4 {
+    width: 25rem;
+  }
+  .my-work #card4 > img {
+    width: 25rem;
+    height: 12.5rem;
   }
   .my-work__header {
     justify-content: center;
@@ -324,6 +419,10 @@
   .contact__icons > img {
     height: auto;
     width: 50px;
+  }
+  .contact__info {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 476px) and (max-width: 765px) {
@@ -412,8 +511,22 @@
   }
 
   .my-work {
-    height: 700px;
     justify-content: center;
+  }
+  .my-work__cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .my-work__card {
+    margin: 5%;
+  }
+  .my-work #card4 {
+    width: 25rem;
+  }
+  .my-work #card4 > img {
+    width: 25rem;
+    height: 12.5rem;
   }
   .my-work__header {
     justify-content: center;
@@ -432,6 +545,10 @@
   .contact__icons > img {
     height: auto;
     width: 50px;
+  }
+  .contact__info {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 766px) and (max-width: 992px) {
@@ -500,7 +617,7 @@
     font-size: 15px;
   }
   .about__content__chip {
-    width: 150px;
+    width: 300px;
     font-size: 15px;
     padding: 5px;
   }
@@ -509,8 +626,11 @@
   }
 
   .my-work {
-    height: 700px;
     justify-content: center;
+  }
+  .my-work #card3 {
+    margin: 5%;
+    margin-left: 20%;
   }
   .my-work__header {
     justify-content: center;
@@ -529,6 +649,10 @@
   .contact__icons > img {
     height: auto;
     width: 50px;
+  }
+  .contact__info {
+    flex-direction: column;
+    align-items: center;
   }
 }
 .background {

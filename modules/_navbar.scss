@@ -10,6 +10,7 @@
   top: 0;
   overflow: hidden;
   background-color: #071F62;
+  transition: top 0.3s;
   
 }
 
@@ -46,6 +47,8 @@
   &__a {
     margin: 5%;
     text-decoration: none;
+    float: left;
+    display: block;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
