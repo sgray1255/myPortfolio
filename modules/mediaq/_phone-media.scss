@@ -9,6 +9,13 @@
 
 @media only screen and (max-width: 475px) {
 
+  .chip {
+    height: 20px;
+    width: 30px;
+  }
+  .header {
+    width: 475px;
+  }
   .background > img{
     width: 100vw;
   }
