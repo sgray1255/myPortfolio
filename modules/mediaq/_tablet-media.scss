@@ -8,7 +8,13 @@
 @use "../contact";
 
 @media only screen and (min-width: 476px) and (max-width: 765px) {
-
+  .chip {
+    height: 30px;
+    width: 50px;
+  }
+  .header{
+    width: 765px;
+  }
   .background {
     width: 100vw;
   }
