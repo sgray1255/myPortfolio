@@ -7,7 +7,6 @@
   justify-content: flex-start;
   align-items: center;
   position: fixed;
-  top: 0;
   overflow: hidden;
   background-color: #071F62;
   transition: top 0.3s;
@@ -33,6 +32,7 @@
     margin: 5%;
   }
 
+
   &__bar {
     margin: 5%;
     display: flex;
@@ -57,7 +57,6 @@
   }
 
   &__a:hover {
-    background-color: white;
-    color: #071F62;
+    cursor: pointer;
   }
 }
