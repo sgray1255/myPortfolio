@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;900&display=swap" rel="stylesheet">
-
+  <script src="index.js" defer></script>
   <title>Stephen Gray - Portfolio</title>
 </head>
 
@@ -21,15 +21,14 @@
     <header class="header">
       <div class="nav">
           <div class="nav__logo">
-            <h1>StephenGray</h1>
+            <a class="nav__a" href="#home"><h1>StephenGray</h1></a>
           </div>
           <nav class="nav__bar">
-            <a class="nav__a" href="#home">Home</a>
             <a class="nav__a" href="#aboutMe" >AboutMe</a>
             <a class="nav__a" href="#myWork">MyWork</a>
             <a class="nav__a" href="#contact">ContactMe</a>
           </nav>
-          <form action="https://github.com/sgray1255" class="chip">
+          <form action="https://github.com/sgray1255" class="chip" target="_blank">
             <button class="chip__content">MyGitHub</button>
           </form>
           
@@ -91,48 +90,51 @@
       <img class="my-work__card__img" height: 100px width: 100px src="images/Screen Shot 2021-12-01 at 2.17.39 pm.png" alt="">
       <p class="my-work__card__header">Javascript Calculator</p>
       <p>HTML, SCSS, Javascript</p>
-      <button><a href="https://sgray1255.github.io/js-calculator/">Demo</a></button>
-      <button><a href="https://github.com/sgray1255/js-calculator">Source Code</a></button>
+      <button><a href="https://sgray1255.github.io/js-calculator/" target="_blank">Demo</a></button>
+      <button><a href="https://github.com/sgray1255/js-calculator" target="_blank">Source Code</a></button>
     </div>
     <div  class="my-work__card" id="card2">
       <img class="my-work__card__img" height: 100px width: 100px src="images/googlebooks.png" alt="">
       <p class="my-work__card__header">GoogleBooks API UI</p>
       <p>HTML, SCSS, Javascript</p>
-      <button><a href="https://sgray1255.github.io/books_project/">Demo</a></button>
-      <button><a href="https://github.com/sgray1255/books_project">Source Code</a></button>
+      <button><a href="https://sgray1255.github.io/books_project/" target="_blank">Demo</a></button>
+      <button><a href="https://github.com/sgray1255/books_project" target="_blank">Source Code</a></button>
     </div>
     <div  class="my-work__card" id="card3">
       <img class="my-work__card__img" src="images/morse.png" alt="morse-code-translator" height: 100px width: 100px>
       <p class="my-work__card__header">Morse Code Translator</p>
       <p>HTML, SCSS, ReactJS</p>
-      <button><a href="https://sgray1255.github.io/morse_code_project/">Demo</a></button>
-      <button><a href="https://github.com/sgray1255/morse_code_project">Source Code</a></button>
+      <button><a href="https://sgray1255.github.io/morse_code_project/" target="_blank">Demo</a></button>
+      <button><a href="https://github.com/sgray1255/morse_code_project" target="_blank">Source Code</a></button>
     </div>
     <div  class="my-work__card" id="card4">
       <img class="my-work__card__img" src="images/E-commerce.png" alt="">
       <p class="my-work__card__header">Star Trek E-commerce Site</p>
       <p>HTML, SCSS, ReactJS</p>
-      <button><a href="https://sgray1255.github.io/E-commerce/">Demo</a></button>
-      <button><a href="https://github.com/sgray1255/E-commerce">Source Code</a></button>
+      <button><a href="https://sgray1255.github.io/E-commerce/" target="_blank">Demo</a></button>
+      <button><a href="https://github.com/sgray1255/E-commerce" target="_blank">Source Code</a></button>
     </div>
   </div>
- 
+  <div class="textBox">
+    <p id="text"></p>
+  </div>
+  
 </div>
 
 <div id="contact" class="contact">
  
  
   <div class="contact__icons">
-    <a href="email.html">
-      <img src="./images/carbon_email.png" alt="email">
+    <a href="mailto:stephen_gray1255@yahoo.com?subject = 'subject text'">
+      <img src="./images/carbon_email.png" class="contact__icons__icons" alt="email">
+    </a>
+    
+    <a href="">
+    <img class="contact__icons__phone" id="phone" src="./images/bi_phone.png" alt="0452-141-587">
     </a>
 
-    <a href="number.html">
-      <img src="./images/bi_phone.png" alt="phone">
-    </a>
-
-    <a href="https://www.linkedin.com/in/stephen-gray-9aa1a120a/">
-      <img src="./images/linkdin.png" alt="LinkdIn">
+    <a href="https://www.linkedin.com/in/stephen-gray-9aa1a120a/" target="_blank">
+      <img class="contact__icons__icons" src="./images/linkdin.png" alt="LinkdIn">
     </a>
  
   </div>
