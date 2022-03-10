@@ -15,7 +15,7 @@ let lastScrollTop;
 navbar = document.querySelector(".header");
 window.addEventListener('scroll',() => {
 let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if(scrollTop > lastScrollTop){
+  if(scrollTop >= lastScrollTop){
   navbar.style.top='-80px';
   } else { 
   navbar.style.top='0';

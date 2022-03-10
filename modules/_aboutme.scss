@@ -1,74 +1,61 @@
 .about {
   display: grid;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 50px;
-  height: 1000px;
+  height: 750px;
   grid-column: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-row: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: 'header header header . . eye . .'
-  '. . . . . . . .' 
-  '. image image  . . content content .'
-  '. image image . . content content .'
-  '. image image . . content content .'
-  ;
+  grid-template-areas: "header header header . . . . ." ". . . . . content content ." "image image image . . content content ." "image image image . . content content ." "image image image . . content content .";
 
-  &__image {
-    grid-area: image;
-    margin-bottom: 75%;
-  }
+&__image {
+  grid-area: image;
+  /* margin-bottom: 75%; */
+}
 
-  &__image2 {
-    margin-top: 35%;
-    margin-left: 80%;
-    grid-area: eye;
-  }
-
-  &__header {
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 90px;
-    // line-height: 100px;
-    color: #071F62;
-    grid-area: header;
-  }
-
-  &__content {
-    display: flex;
-    padding: 15px;
-    font-family: 'Poppins', sans-serif;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    margin-top: 25%;
-    margin-left: 10%;
-    color: white;
-    background-color: #071F62;
-    border: 2px solid #071F62;
-    border-radius: 15px;
-    grid-area: content;
-    height: 300px;
-  }
-
-  &__content__chip {
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-    color: #071F62;
-    border: 2px solid #071F62;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    padding: 5px;
-  }
-
-  &__content__chip__icon {
-    display: flex;
-    height: 25px;
-    background-color: white;
-    color: #071F62;
-    justify-content: center;
+&__header {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  color: #071F62;
+  grid-area: header;
+  white-space: nowrap;
+}
+&__content {
+  display: flex;
+  padding: 25px;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  color: white;
+  background-color: #071F62;
+  border: 2px solid #071F62;
+  border-radius: 7px;
+  grid-area: content;
+  height: 300px;
   }
 }
+
+  .wave {
+  font-size: 4em;
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%; 
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+

@@ -4,7 +4,7 @@
   display: flex;
   height: 75px;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: flex;
   align-items: center;
   position: fixed;
   overflow: hidden;
@@ -17,6 +17,7 @@
 .nav {
   display: flex;
   align-items: center;
+  white-space: nowrap;
   list-style-type: none;
   background-color: transparent;
 
@@ -35,6 +36,7 @@
 
   &__bar {
     margin: 5%;
+    margin-left: 25%;
     display: flex;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
