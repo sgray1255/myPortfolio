@@ -8,7 +8,15 @@
 @use "../contact";
 
 @media only screen and (min-width: 766px) and (max-width: 992px) {
-
+  
+  .wave {
+  font-size: 5em;
+  animation-name: wave-animation; 
+  animation-duration: 2.5s;      
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%;       
+  display: inline-block;
+  }
   .chip {
     height: 20px;
     width: 75px;
@@ -25,7 +33,7 @@
     }
     
     &__a {
-      font-size: 10px;
+      font-size: 15px;
     }
   }
   
@@ -69,7 +77,7 @@
   .about {
     margin-left: 25px;
     margin-top: 25px;
-    height: 1000px;
+    height: 750px;
   
 
     &__image {
@@ -78,40 +86,25 @@
       width: 300px;
     }
 
-    &__image2 {
-      grid-area: eye;
-      height: auto;
-      width: 200px;
-    }
-
     &__header {
       font-size: 75px;
+
     }
 
     &__content {
       width: 400px;
       color: white;
       height: 300px;
-      font-size: 15px;
+      font-size: 17px;
     }
-
-    &__content__chip {
-      width: 300px;
-      font-size: 15px;
-      padding: 5px;
-    }
-
-    &__content__chip__icon {
-      height: 20px;
+    .wave {
+      font-size: 35px;
     }
 }
 
 .my-work {
-  #card3 {
-    margin: 5%;
-    margin-left: 20%;
-  }
   justify-content: center;
+  flex-direction: column;
 
   &__header {
     justify-content: center;
@@ -122,7 +115,9 @@
     font-size: 50px;
     line-height: 150px;
   }
-
+    &__cards {
+    display: flex;
+  } 
 }
 
 .contact {
